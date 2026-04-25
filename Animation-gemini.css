@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1e1e2f 0%, #2d2d44 100%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.header-search-bar {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  outline: none;
+  transition: 0.3s;
+}
+
+.header-search-bar:focus {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #4285f4;
+}
+
+.logo {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  background: linear-gradient(to right, #4285f4, #ea4335, #fbbc05, #34a853);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icon-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+align-items: center;
+  transition: transform 0.2s;
+}
+
+.icon-item:hover {
+  transform: translateY(-5px);
+}
+
+.cats-icons {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 8px;
+}
+
+figcaption {
+  font-size: 0.8rem;
+  color: #ccc;
+}
